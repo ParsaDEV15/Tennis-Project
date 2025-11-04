@@ -1,0 +1,6 @@
+match --> 'tournament', 'away_team_score', 'round', 'home_team', 'venue', 'home_team_score', 'time', 'event', 'season', 'away_team'
+odds --> 'odds'
+point_by_point --> 'pbp'
+statistics --> 'statistics'
+tennis_power --> 'power'
+votes --> 'votes'
