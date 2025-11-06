@@ -19,7 +19,7 @@ def extract_files(parquet_main_category, parquet_sub_category, zip_date='tennis_
         print(f"Found {len(all_files)} files in main zip")
         zf.extractall(zips_saving_path)
 
-    print(f'Extracting parquets in date range from {start_date} to {end_date} '
+    print(f'Extracting parquets in date range from {start_date} to {end_date}'
           f'with category' f' --> {parquet_main_category} and subcategory --> {parquet_sub_category}')
     for zip_date in os.listdir(zips_saving_path):
         file_date = datetime.strptime(zip_date.split('.')[0], '%Y%m%d')
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     extract_files(
         parquet_main_category=main_category,
         parquet_sub_category=sub_category,
-        end_date='20240201'
+        end_date='20240205'
     )
     create_parquet_files(
         parquet_main_category=main_category,
